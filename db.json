@@ -1,0 +1,306 @@
+{
+  "seller": [
+    {
+      "name": "sam sidhu",
+      "email": "sam@seller.com",
+      "password": "abc@123",
+      "id": 2
+    },
+    {
+      "name": "peter",
+      "password": "abc@123",
+      "email": "peter@test.com",
+      "id": 3
+    },
+    {
+      "name": "bruce",
+      "password": "abc@123",
+      "email": "bruce@test.com",
+      "id": 4
+    },
+    {
+      "name": "anil",
+      "password": "abc123",
+      "email": "anil@test.com",
+      "id": 5
+    },
+    {
+      "name": "alena",
+      "password": "abc123",
+      "email": "alena@test.com",
+      "id": 6
+    },
+    {
+      "name": "sam",
+      "password": "abc@123",
+      "email": "sam@test.com",
+      "id": 7
+    },
+    {
+      "name": "bhasker",
+      "password": "abc@123",
+      "email": "bhasker@test.com",
+      "id": 8
+    },
+    {
+      "name": "tle",
+      "password": "123",
+      "email": "t@test.com",
+      "id": 9
+    }
+  ],
+  "products": [
+    {
+      "name": "Fear of God Essentials Hoodie",
+      "price": "2500",
+      "category": "fog",
+      "color": "black",
+      "description": "The Essentials hoodie has been redesigned with increased volume in the body and sleeves, creating a soft, round, cropped silhouette. New details include a mock neckline and side seam pockets to provide functionality. The curved Essentials Fear of God logo is vintage-inspired but updated in a rubberized soft-touch applique. A new Fear of God rubberized label is on the hood.",
+      "image": "https://cdn.shopify.com/s/files/1/0709/9485/4163/products/image00057.jpg?v=1676149896&width=533",
+      "id": 1
+    },
+    {
+      "name": "Stussy & Born x Raised 8 Ball Tee White",
+      "price": "3900",
+      "category": "stussy",
+      "color": "white",
+      "description": "STUSSY | 3903852-WHIT",
+      "image": "https://d2cva83hdk3bwc.cloudfront.net/stussy---born-x-raised-8-ball-tee-white-1.jpg",
+      "id": 3
+    },
+    {
+      "name": "Gucci Cotton T-Shirt With Gucci Blade Print Black",
+      "price": "15700",
+      "category": "gucci",
+      "color": "black",
+      "description": "GUCCI | 616036-XJFF9-1152",
+      "image": "https://d2cva83hdk3bwc.cloudfront.net/gucci-cotton-t-shirt-with-gucci-blade-print-black-1.jpg",
+      "id": 4
+    },
+    {
+      "name": "Jordan 1 Retro High OG Lost and Found",
+      "price": "8900",
+      "category": "nike",
+      "color": "red",
+      "description": "JORDAN | DZ5485-612",
+      "image": "https://d2cva83hdk3bwc.cloudfront.net/jordan-1-retro-high-og-lost-and-found-1.jpg",
+      "id": 5
+    },
+    {
+      "name": "Nike Air Force 1 Low Supreme White",
+      "price": "4500",
+      "category": "nike",
+      "color": "white",
+      "description": "NIKE | CU9225-100",
+      "image": "https://d2cva83hdk3bwc.cloudfront.net/nike-air-force-1-low-supreme-box-logo-white-1.jpg",
+      "id": 6
+    },
+    {
+      "name": "Bathing Ape Since 1993 Backpack Black",
+      "price": "800",
+      "category": "bape",
+      "color": "black",
+      "description": "A BATHING APE | BPBACKPACK-BLACK",
+      "image": "https://d2cva83hdk3bwc.cloudfront.net/bathing-ape-since-1993-backpack-black-1.jpg",
+      "id": 7
+    },
+    {
+      "name": "Stussy Mercury Tee Black",
+      "price": "2690",
+      "category": "stussy",
+      "color": "black",
+      "description": "STUSSY | 1904983-BLAC",
+      "image": "https://d2cva83hdk3bwc.cloudfront.net/stussy-mercury-tee-black-2.jpg",
+      "id": 8
+    },
+    {
+      "name": "Stussy Test Strike Pigment Dyed Tee Tomato",
+      "price": "2900",
+      "category": "stussy",
+      "color": "orange",
+      "description": "STUSSY | 1904915H-TOMA",
+      "image": "https://d2cva83hdk3bwc.cloudfront.net/stussy-test-strike-pigment-dyed-tee-tomato-1.jpg",
+      "id": 9
+    },
+    {
+      "name": "Stussy Basic Stussy Pigment Dyed T-Shirt Natural 2023",
+      "price": "2290",
+      "category": "stussy",
+      "color": "white",
+      "description": "STUSSY | 1904879H",
+      "image": "https://d2cva83hdk3bwc.cloudfront.net/stussy-basic-stussy-pigment-dyed-t-shirt-natural-2023-1.jpg",
+      "id": 10
+    },
+    {
+      "name": "Stussy Popsicle Tee White",
+      "price": "2690",
+      "category": "stussy",
+      "color": "white",
+      "description": "STUSSY | 1904871-WHIT",
+      "image": "https://d2cva83hdk3bwc.cloudfront.net/stussy-popsicle-tee-white-1.jpg",
+      "id": 11
+    },
+    {
+      "name": "Stussy Chenille S Low Pro Cap Brown",
+      "price": "3590",
+      "category": "stussy",
+      "color": "brown",
+      "description": "STUSSY | 1311061-BROW",
+      "image": "https://d2cva83hdk3bwc.cloudfront.net/stussy-chenille-s-low-pro-cap-brown-1.jpg",
+      "id": 12
+    },
+    {
+      "name": "Stussy & Sean Paul Tee Black",
+      "price": "2830",
+      "category": "stussy",
+      "color": "black",
+      "description": "STUSSY | 3903897-BLAC",
+      "image": "https://d2cva83hdk3bwc.cloudfront.net/stussy---sean-paul-tee-black-1.jpg",
+      "id": 13
+    },
+    {
+      "name": "Louis Vuitton Watercolor Monogram Polo Shirt White Blue",
+      "price": "39900",
+      "category": "lv",
+      "color": "blue",
+      "description": "LOUIS VUITTON | LV-PLALVWMPSWBQ1C6",
+      "image": "https://d2cva83hdk3bwc.cloudfront.net/louis-vuitton-watercolor-monogram-polo-shirt-white-blue-1.jpg",
+      "id": 14
+    },
+    {
+      "name": "Louis Vuitton LV Initiales 40MM Reversible Belt In Monogram",
+      "price": "19999",
+      "category": "lv",
+      "color": "black",
+      "description": "LOUIS VUITTON | M0450",
+      "image": "https://d2cva83hdk3bwc.cloudfront.net/louis-vuitton-lv-initiales-40mm-reversible-belt-in-monogram-eclipse-canvas-with-ruthenium-finishing-hardware-black-1.jpg",
+      "id": 15
+    },
+    {
+      "name": "adidas adiFom Superstar Core White",
+      "price": "2400",
+      "category": "adidas",
+      "color": "white",
+      "description": "ADIDAS | HQ8750",
+      "image": "https://d2cva83hdk3bwc.cloudfront.net/adidas-adifom-superstar-core-white-1.jpg",
+      "id": 16
+    },
+    {
+      "name": "Chanel Small Flap Bag In Grained Calfskin With Gold-Tone Metal Black",
+      "price": "184500",
+      "category": "chanel",
+      "color": "black",
+      "description": "CHANEL | CHL-SBBCSFBIGCWGTMBZZJ2",
+      "image": "https://d2cva83hdk3bwc.cloudfront.net/chanel-small-flap-bag-in-grained-calfskin-with-gold-tone-metal-black-1.jpg",
+      "id": 17
+    },
+    {
+      "name": "BAPE Hoodie Full Zip “BANGKOK 5TH ANNIVERSARY COLLECTION”",
+      "price": "11900",
+      "category": "bape",
+      "color": "black",
+      "description": "A BATHING APE | BA-HDABHFZB5AC5BBA",
+      "image": "https://d2cva83hdk3bwc.cloudfront.net/bape-hoodie-full-zip--bangkok-5th-anniversary-collection--1.jpg",
+      "id": 18
+    },
+    {
+      "name": "Gucci GG Large Belt Bag In Beige And Ebony Supreme Canvas With Brown ",
+      "price": "35980",
+      "category": "gucci",
+      "color": "brown",
+      "description": "GUCCI | 733240-92THG-8563",
+      "image": "https://d2cva83hdk3bwc.cloudfront.net/gucci-gg-large-belt-bag-in-beige-and-ebony-supreme-canvas-with-brown-leather-trim-1.jpg",
+      "id": 19
+    },
+    {
+      "name": "Fear of God Essentials Sweatshort Stretch Limo (SS22)",
+      "price": "3090",
+      "category": "fog",
+      "color": "black",
+      "description": "FEAR OF GOD | FOG-SRAESSLE84T",
+      "image": "https://d2cva83hdk3bwc.cloudfront.net/essentials-sweatshort-stretch-limo-1.jpg",
+      "id": 20
+    }
+  ],
+  "users": [
+    {
+      "name": "anil",
+      "email": "anil@user.com",
+      "password": "abc123",
+      "id": 1
+    },
+    {
+      "name": "peter",
+      "email": "peter@user.com",
+      "password": "abc123",
+      "id": 2
+    },
+    {
+      "name": "hyden",
+      "email": "hyden@user.com",
+      "password": "abc123",
+      "id": 3
+    },
+    {
+      "name": "tony",
+      "email": "tony@user.com",
+      "password": "abc123",
+      "id": 4
+    },
+    {
+      "name": "tle",
+      "email": "t@test.com",
+      "password": "123",
+      "id": 5
+    },
+    {
+      "name": "nay",
+      "email": "nay@gmail.com",
+      "password": "12345",
+      "id": 6
+    }
+  ],
+  "cart": [],
+  "orders": [
+    {
+      "email": "anil@user.com",
+      "address": "noida sector x",
+      "contact": "9999",
+      "totalPrice": 104750,
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "email": "anil@test.com",
+      "address": "noida sector x",
+      "contact": "8877",
+      "totalPrice": 6100,
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "email": "t@test.com",
+      "address": "4555",
+      "contact": "yep",
+      "totalPrice": 2600,
+      "userId": 5,
+      "id": 4
+    },
+    {
+      "email": "t@test.com",
+      "address": "4555",
+      "contact": "yep",
+      "totalPrice": 191330,
+      "userId": 5,
+      "id": 5
+    },
+    {
+      "email": "t@test.com",
+      "address": "4555",
+      "contact": "yep",
+      "totalPrice": 2600,
+      "userId": 5,
+      "id": 6
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+
+<div class="product-list-wrapper">
+    <div class="row">
+        <h1 style="padding: 30px;">Product : {{category}}</h1>
+        <div class="col-sm-3" *ngFor="let item of brandsProduct">
+           
+            <div class="product-item" routerLink="/details/{{item.id}}">
+              <a  >
+              <img src="{{ item.image }}" alt="" />
+            </a>
+              <div class="product-details">
+                <h6 class="name-head">{{ item.name }}</h6>
+                <div class="product-price">
+                  <h6>฿{{ item.price | number: '1.0-0'  }}</h6>
+                </div>
+                <div class="product-color"></div>
+              </div>
+              
+            </div>
+        </div>
+      </div>
+</div>
+

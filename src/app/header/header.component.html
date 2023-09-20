@@ -1,0 +1,54 @@
+<nav class="nav" >
+  <h1><a class="logo" routerLink="">Rawsun</a> </h1>
+  <div  *ngIf="menuType!=='seller'" class="nav-search">
+    <input type="text"
+    #searchInput
+    (keyup)="searchProduct($event)" (blur)="hideSearch()" placeholder="Search Products"
+         (keyup.enter)="submitSearch(searchInput.value)" />
+    
+    <ul style="margin-top: 30px;" class="suggested-search" *ngIf="searchResult">
+      <li *ngFor="let item of searchResult">
+        <a (mousedown)="redirectToDetails(item.id)" >{{item.name}}</a>
+      </li>
+    </ul>
+  </div>
+ <div [ngSwitch]="menuType">
+  <ul *ngSwitchCase="'default'" >
+    <li><a class="text" routerLink="seller-auth">Seller</a></li>
+    <li><a class="text" routerLink="">Home</a></li>
+    <li><a class="text" routerLink="user-auth">Login/Sign-up</a></li>
+    <button style="margin-left: 40px; color: black;" routerLink="user-auth" type="button" class="btn btn-outline-light position-relative">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket-fill" viewBox="0 0 16 16">
+        <path d="M5.071 1.243a.5.5 0 0 1 .858.514L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 6h1.717L5.07 1.243zM3.5 10.5a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3z"/>
+      </svg>
+      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+        {{cartItems}}
+      </span>
+    </button>
+  </ul>
+  <ul *ngSwitchCase="'user'" >
+    
+    <li><a class="text" routerLink="">Home</a></li>
+    <li><a class="text">{{userName | titlecase}}</a></li>
+    <li><a class="text" routerLink="my-orders" >My Orders</a></li>
+    <li><a class="text" (click)="userLogout()" >Logout</a></li>
+
+    <button style="margin-left: 40px; color: black;" [routerLink]="cartItems>0?'cart-page':null" type="button" class="btn btn-outline-light position-relative">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket-fill" viewBox="0 0 16 16">
+        <path d="M5.071 1.243a.5.5 0 0 1 .858.514L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 6h1.717L5.07 1.243zM3.5 10.5a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3z"/>
+      </svg>
+      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+        {{cartItems}}
+      </span>
+    </button>
+
+  </ul>
+
+  <ul *ngSwitchCase="'seller'" >
+    <li><a class="text" routerLink="seller-add-product">Add Product</a></li>
+    <li><a class="text" routerLink="seller-home">List</a></li>
+    <li><a class="text" (click)="logout()">Logout</a></li>
+    <li><a class="text" >{{sellerName | titlecase}}</a></li>
+  </ul>
+ </div>
+</nav>

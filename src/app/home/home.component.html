@@ -1,0 +1,127 @@
+<!-- <ngb-carousel *ngIf="popularProducts">
+  <ng-template *ngFor="let item of popularProducts" ngbSlide>
+    <div class="picsum-img-wrapper">
+      <a routerLink="/details/{{ item.id }}">
+        <img
+          class="product-header-image"
+          src="{{ item.image }}"
+          alt="Random first slide"
+        />
+      </a>
+    </div>
+    <div class="carousel-caption">
+      <h3>{{ item.name }}</h3>
+    </div>
+  </ng-template>
+</ngb-carousel> -->
+<ngb-carousel *ngIf="images">
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img class="product-header-image" [routerLink]="['/showbrands']" [queryParams]="{ category: 'stussy' }" src="https://d2cva83hdk3bwc.cloudfront.net/Banner_Stussy_Apparel_th.webp" alt="Random first slide" />
+    </div>
+  </ng-template>
+
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img class="product-header-image" [routerLink]="['/showbrands']" [queryParams]="{ category: 'chanel' }" src="https://d2cva83hdk3bwc.cloudfront.net/Black_Luxbags_th.webp" alt="Random second slide" />
+    </div>
+  </ng-template>
+
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img class="product-header-image" [routerLink]="['/showbrands']" [queryParams]="{ category: 'nike' }" src="https://d2cva83hdk3bwc.cloudfront.net/Banner_TSCPASS_th.webp" alt="Random third slide" />
+    </div>
+  </ng-template>
+</ngb-carousel>
+
+<div class="product-list-wrapper">
+
+ 
+
+
+
+  
+  
+
+  <h1 >สินค้ายอดฮิต</h1>
+
+  <div class="row">
+    <div class="col-sm-3" *ngFor="let item of trendyProducts">
+      
+        <div class="product-item" routerLink="/details/{{item.id}}">
+          <a  >
+          <img src="{{ item.image }}" alt="" />
+        </a>
+          <div class="product-details">
+            <h6 class="name-head">{{ item.name }}</h6>
+            <div class="product-price">
+              <h6>฿{{ item.price | number: '1.0-0'  }}</h6>
+            </div>
+            <div class="product-color"></div>
+          </div>
+          
+        </div>
+    </div>
+  </div>
+
+  <div class="brands">
+    <div class="div-brands" [routerLink]="['/showbrands']" [queryParams]="{ category: 'stussy' }">
+      <span class="dot"> <img src="https://i.ebayimg.com/images/g/e6oAAOSw4ZdhMjuV/s-l1200.webp" alt=""></span>
+      <p>Stussy</p>
+    </div>
+    <div class="div-brands" [routerLink]="['/showbrands']" [queryParams]="{ category: 'nike' }">
+      <span class="dot"> <img src="https://zdigitizing.net/wp-content/uploads/2022/12/Nike-Logo.png" alt=""></span>
+      <p>Nike</p>
+    </div>
+    <div class="div-brands" [routerLink]="['/showbrands']" [queryParams]="{ category: 'gucci' }">
+      <span class="dot"> <img src="https://vectorseek.com/wp-content/uploads/2020/12/Gucci-Logo-Vector-scaled.jpg" alt=""></span>
+      <p>Gucci</p>
+    </div>
+    <div class="div-brands" [routerLink]="['/showbrands']" [queryParams]="{ category: 'bape' }">
+      <span class="dot"> <img src="https://1000marche.net/wp-content/uploads/2020/03/Bape-logo.png" alt=""></span>
+      <p>Bape</p>
+    </div>
+    
+  </div>
+  <div class="brands">
+    <div class="div-brands" [routerLink]="['/showbrands']" [queryParams]="{ category: 'adidas' }">
+      <span class="dot"> <img src="https://thumbs.dreamstime.com/b/adidas-ag-multinational-corporation-founded-headquartered-herzogenaurach-germany-designs-manufactures-shoes-139136442.jpg" alt=""></span>
+      <p>Adidas</p>
+    </div>
+    <div class="div-brands" [routerLink]="['/showbrands']" [queryParams]="{ category: 'lv' }">
+      <span class="dot"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Louis_Vuitton_Icon.svg/1200px-Louis_Vuitton_Icon.svg.png" alt=""></span>
+      <p>Louis Vitton</p>
+    </div>
+    <div class="div-brands" [routerLink]="['/showbrands']" [queryParams]="{ category: 'chanel' }">
+      <span class="dot"> <img src="https://ww1.freelogovectors.net/wp-content/uploads/2023/04/chanel-logo-freelogovectors.net_.png" alt=""></span>
+      <p>Chanel</p>
+    </div>
+    <div class="div-brands" [routerLink]="['/showbrands']" [queryParams]="{ category: 'fog' }">
+      <span class="dot"> <img src="https://ww1.freelogovectors.net/wp-content/uploads/2023/05/essentials-logo-freelogovectors.net_.png" alt=""></span>
+      <p>Fear of God</p>
+    </div>
+    
+  </div>
+
+  <h1 style="margin-top: 40px;">สินค้าทั้งหมด</h1>
+  <div class="row">
+    <div class="col-sm-3" *ngFor="let item of allProducts">
+      
+        <div class="product-item" routerLink="/details/{{item.id}}">
+          <a  >
+          <img src="{{ item.image }}" alt="" />
+        </a>
+          <div class="product-details">
+            <h6 class="name-head">{{ item.name }}</h6>
+            <div class="product-price">
+              <h6>{{ item.price | number: '1.0-0' }} ฿</h6>
+
+            </div>
+           
+          </div>
+          
+        </div>
+    </div>
+  </div>
+
+</div>
