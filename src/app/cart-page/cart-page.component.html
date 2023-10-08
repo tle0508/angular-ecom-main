@@ -33,7 +33,7 @@
     <li> <span>Delivery:</span><span>{{priceSummary.delivery| number: '1.0-0' }} ฿</span></li>
     <li> <span >Discount:</span><span style="color: red;">-{{priceSummary.discount| number: '1.0-0' }} ฿</span></li>
     <li> <span><h4>Total</h4></span> <span><h4>{{priceSummary.total| number: '1.0-0' }} ฿</h4></span></li>
-    <button (click)="checkout()" class="form-button max-width" >Checkout</button>
+    <button (click)="checkout()" type="button" class="btn btn-primary max-width" >Checkout</button>
 </ul>
 </div>
 </div>

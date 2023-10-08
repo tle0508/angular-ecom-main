@@ -59,7 +59,7 @@ h1:hover .logo {
 .nav li a.text:hover {
   text-shadow: 0 0 11px black; 
   color: rgb(0, 0, 0); 
-  font-weight: 550;
+  
 }
 
 .nav ul a {

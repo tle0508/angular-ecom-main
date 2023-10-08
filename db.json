@@ -1,48 +1,6 @@
 {
   "seller": [
     {
-      "name": "sam sidhu",
-      "email": "sam@seller.com",
-      "password": "abc@123",
-      "id": 2
-    },
-    {
-      "name": "peter",
-      "password": "abc@123",
-      "email": "peter@test.com",
-      "id": 3
-    },
-    {
-      "name": "bruce",
-      "password": "abc@123",
-      "email": "bruce@test.com",
-      "id": 4
-    },
-    {
-      "name": "anil",
-      "password": "abc123",
-      "email": "anil@test.com",
-      "id": 5
-    },
-    {
-      "name": "alena",
-      "password": "abc123",
-      "email": "alena@test.com",
-      "id": 6
-    },
-    {
-      "name": "sam",
-      "password": "abc@123",
-      "email": "sam@test.com",
-      "id": 7
-    },
-    {
-      "name": "bhasker",
-      "password": "abc@123",
-      "email": "bhasker@test.com",
-      "id": 8
-    },
-    {
       "name": "tle",
       "password": "123",
       "email": "t@test.com",
@@ -213,13 +171,13 @@
       "id": 19
     },
     {
-      "name": "Fear of God Essentials Sweatshort Stretch Limo (SS22)",
-      "price": "3090",
-      "category": "fog",
+      "name": "Chanel Boy Small Flap Bag In Grained Calfskin With Gold Hardware Black",
+      "price": "5600",
+      "category": "chanel",
       "color": "black",
-      "description": "FEAR OF GOD | FOG-SRAESSLE84T",
-      "image": "https://d2cva83hdk3bwc.cloudfront.net/essentials-sweatshort-stretch-limo-1.jpg",
-      "id": 20
+      "description": "CHANEL | CHL-SBBCSBFBBCQGX0CG",
+      "image": "https://d2cva83hdk3bwc.cloudfront.net/chanel-small-boy-flap-bag-black-caviar-quilted-ghw-1.jpg",
+      "id": 21
     }
   ],
   "users": [
@@ -258,49 +216,51 @@
       "email": "nay@gmail.com",
       "password": "12345",
       "id": 6
+    },
+    {
+      "name": "sirun",
+      "email": "sirun@test.com",
+      "password": "1",
+      "id": 7
+    },
+    {
+      "name": "sirun",
+      "email": "sirun@gmail.com",
+      "password": "123",
+      "id": 8
+    },
+    {
+      "name": "test",
+      "email": "test@gmail.com",
+      "password": "123",
+      "id": 9
     }
   ],
-  "cart": [],
-  "orders": [
+  "cart": [
     {
-      "email": "anil@user.com",
-      "address": "noida sector x",
-      "contact": "9999",
-      "totalPrice": 104750,
-      "userId": 1,
+      "name": "Jordan 1 Retro High OG Lost and Found",
+      "price": "8900",
+      "category": "nike",
+      "color": "red",
+      "description": "JORDAN | DZ5485-612",
+      "image": "https://d2cva83hdk3bwc.cloudfront.net/jordan-1-retro-high-og-lost-and-found-1.jpg",
+      "quantity": 1,
+      "productId": 5,
+      "userId": 9,
       "id": 1
     },
     {
-      "email": "anil@test.com",
-      "address": "noida sector x",
-      "contact": "8877",
-      "totalPrice": 6100,
-      "userId": 1,
-      "id": 3
-    },
-    {
-      "email": "t@test.com",
-      "address": "4555",
-      "contact": "yep",
-      "totalPrice": 2600,
-      "userId": 5,
-      "id": 4
-    },
-    {
-      "email": "t@test.com",
-      "address": "4555",
-      "contact": "yep",
-      "totalPrice": 191330,
-      "userId": 5,
-      "id": 5
-    },
-    {
-      "email": "t@test.com",
-      "address": "4555",
-      "contact": "yep",
-      "totalPrice": 2600,
-      "userId": 5,
-      "id": 6
+      "name": "Stussy Basic Stussy Pigment Dyed T-Shirt Natural 2023",
+      "price": "2290",
+      "category": "stussy",
+      "color": "white",
+      "description": "STUSSY | 1904879H",
+      "image": "https://d2cva83hdk3bwc.cloudfront.net/stussy-basic-stussy-pigment-dyed-t-shirt-natural-2023-1.jpg",
+      "quantity": 1,
+      "productId": 10,
+      "userId": 9,
+      "id": 2
     }
-  ]
+  ],
+  "orders": []
 }

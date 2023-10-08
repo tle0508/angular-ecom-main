@@ -9,6 +9,7 @@ import { Observable, map } from 'rxjs';
 export class ProductService {
   cartData = new EventEmitter<product[] | []>();
   constructor(private http: HttpClient) { }
+
   addProduct(data: product) {
     return this.http.post('http://localhost:3000/products', data);
   }
@@ -42,7 +43,7 @@ export class ProductService {
 
   trendyProducts(): Observable<product[]> {
     return this.http.get<product[]>('http://localhost:3000/products').pipe(
-      map(products => products.filter(product => [4, 5, 6, 7].includes(product.id)))
+      map(products => products.filter(product => [5, 7, 10, 11].includes(product.id)))
     );
   }
   
@@ -106,6 +107,7 @@ export class ProductService {
   orderNow(data: order) {
     return this.http.post('http://localhost:3000/orders', data);
   }
+
   orderList() {
     let userStore = localStorage.getItem('user');
     let userData = userStore && JSON.parse(userStore);
