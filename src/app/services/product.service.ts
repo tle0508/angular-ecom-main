@@ -43,7 +43,7 @@ export class ProductService {
 
   trendyProducts(): Observable<product[]> {
     return this.http.get<product[]>('http://localhost:3000/products').pipe(
-      map(products => products.filter(product => [5, 7, 10, 11].includes(product.id)))
+      map(products => products.filter(product => [7, 8, 9, 10].includes(product.id)))
     );
   }
   
